@@ -1,0 +1,86 @@
+.btn {
+    padding: 0 1.6rem;
+    line-height: 4.1rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+    border: 1px solid transparent;
+    img {
+        margin-right: 0.8rem;
+    }
+    &-primary {
+        background-color: $primary-default;
+        border-color: $primary-default;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $primary-light;
+            border-color: $primary-light;
+        }
+    }
+    &-secundary {
+        border-color: #fff;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #fff;
+            color: $neutral-200;
+        }
+    }
+}
+
+.game-card {
+    display: block;
+    width: 100%;
+    max-width: 28rem;
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+    img {
+        height: 38.4rem;
+        overflow: hidden;
+        border-radius: 0.4rem;
+        width: 100%;            
+        margin-bottom: 2.4rem;
+        transition: all .3s ease-in;
+    }
+
+    .info {
+        h3 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: #e5e5e5;
+            margin-bottom: 0.4rem;
+        }
+        span {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+            color: rgba($color: #e5e5e5, $alpha: 0.6);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        img {
+            height: 34.3rem;
+        }
+    }
+    @media (max-width: 991px) {
+        img {
+            height: 30.3rem;
+        }
+    }
+    @media (max-width: 560px) {
+        img {
+            height: 21.3rem;
+            margin-bottom: 0;
+        }
+        .info {
+            display: none;
+        }
+    }
+}
